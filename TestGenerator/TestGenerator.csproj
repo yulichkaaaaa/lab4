@@ -1,0 +1,24 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp3.1</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Compile Remove="resourses\AssemblyInformation.cs" />
+    <Compile Remove="resourses\IntGenerator.cs" />
+    <Compile Remove="resourses\Node.cs" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.CodeAnalysis.Common" Version="3.8.0" />
+    <PackageReference Include="Microsoft.CodeAnalysis.CSharp" Version="3.8.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Resource Include="resourses\AssemblyInformation.cs" />
+    <Resource Include="resourses\IntGenerator.cs" />
+    <Resource Include="resourses\Node.cs" />
+  </ItemGroup>
+
+</Project>
